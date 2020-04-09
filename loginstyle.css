@@ -26,8 +26,9 @@
 }
 
 .landing h2{
-    color: black;
+    color: white;
     font-weight: bold;
+    font-size: 30px;
 }
 
 .landing .index-nav a {
@@ -42,38 +43,10 @@
     border-radius: 25px;
 }
 
-/*
-.landing .header a.logo {
-    font-size: 8rem;
-    line-height: 7rem;
-    font-weight: bold;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.75)
-}
-
-.header a.active {
-    background-color: lightgray;
-    color: white;
-}
-*/
 .nav {
     float: right;
 }
 
-/*
-body { 
-    position: left;
-    overflow-y: scroll;
-    width: 100%; 
-    top: -20px;
-    right: -40px;
-    bottom: -40px;
-    width: auto;
-    height: auto;
-    background-image: url(pets.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-*/
 
 .landing {
     overflow-y: scroll;
@@ -91,6 +64,63 @@ body {
     0%   {background-position: 0 0;}
     100% {background-position: -2000px 0;}
 }
+
+/* This is where I will place the login style*/
+
+.landing input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.landing p
+{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: #fff;
+    font-size: 20px;
+}
+
+.landing input
+{
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.landing input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #2528fb;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.landing input[type = "submit"]:hover
+{
+    cursor: pointer;
+    background: #ff9307;
+    color: #000;
+}
+.landing a{
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+}
+.landing a:hover
+{
+  color: #ff9307;  
+}
+
 
 .contactus a {
     color: white;
