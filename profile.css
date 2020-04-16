@@ -1,6 +1,18 @@
 @import url(http://fonts.googleapis.com/css?family=Exo:100,200,400);
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300); 
 
+.header-nav{
+    padding: 1rem 0 1rem 3rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:lightskyblue;
+    color: white;
+}
+
 :root {
     --color: lightskyblue; 
 }
@@ -299,12 +311,12 @@ font-size: 1.2rem;
 transition: all .5 ease-in-out;
 }
 
-.profile-option: hover{
+.profile-option:hover{
     background: #fff;
     border: 1px solid var(--color);
 }
 
-.profile-option: hover .notification{
+.profile-option:hover .notification{
 color: var (---color);
 }
 
@@ -378,7 +390,7 @@ button.chatbtn, button.createbtn {
     color: #fff;
 }
 
-button.chatbtn: hover, button.createbtn: hover {
+button.chatbtn:hover, button.createbtn:hover {
     background: rgba(288, 0, 70,.9);
 }
 
