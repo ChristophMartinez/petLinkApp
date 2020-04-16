@@ -69,6 +69,9 @@
     0%   {background-position: 0 0;}
     100% {background-position: -2000px 0;}
 }
+/*  Main landing Page above   */
+
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 
 /* This is where I will place the login style*/
 
@@ -107,15 +110,16 @@
     color: #fff;
     font-size: 18px;
     border-radius: 20px;
-}
+} 
 
-.landing input[type = "submit"]:hover
+ .landing input[type = "submit"]:hover
 {
     cursor: pointer;
     background: #ff9307;
     color: #000;
-}
+} 
 .landing a{
+    
     text-decoration: none;
     font-size: 16px;
     line-height: 20px;
@@ -126,6 +130,9 @@
   color: #ff9307;  
 }
 /* Login Styles End Here */
+
+
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 
 /*Check Boxes Will Start Here */
 .checkbox {
