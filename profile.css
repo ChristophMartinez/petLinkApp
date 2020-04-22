@@ -445,7 +445,7 @@ button.chatbtn i, button.createbtn i{
     transition: all .2 ease-in-out;
 }
 
-.nav ul li.active, nav ul li: hover{
+.nav ul li.active, nav ul li:hover{
     box-shadow: 0px -3px 0px rbba(288, 0, 70, .9) inset;
 }
 
