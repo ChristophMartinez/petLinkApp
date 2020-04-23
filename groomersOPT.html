@@ -14,12 +14,19 @@
 <body class="content-grid">
     <header>
         <div class="header-nav">
-            <span class="loginLink"><a href="petOwner.html">
-                    <h1>PetLink</h1>
-                </a></span>
-            <a href="trending.html">Trending</a>
-            <a href="messaging.html">Messaging</a>
-            <a href="jobs.html">Jobs</a>
+        <span class="loginLink"><a href="petOwner.html">
+                <h1>PetLink</h1>
+            </a></span>
+        <a href="trending.html"> <button class="dropbtn">Trending</button></a>
+        <a href="messaging.html"> <button class="dropbtn">Messaging</button></a>
+        
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Services</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#">Vetenarians</a>
+                <a href="groomersOPT.html">Groomers</a>
+                <a href="#">Walkers/Sitters</a>
+            </div>
         </div>
     </header>
     <div class="user-profile">
@@ -36,7 +43,7 @@
             <a href="#"><img class="card-img-top" src="./resources/dog1.jpg" alt=""></a>
             <div class="card-body">
                 <h4 class="card-title">
-                    <a href="#">Make an Appointment Here</a>
+                    <a href="appointment.html">Make an Appointment Here</a>
                 </h4>
                 <p class="card-text">At Groomers USA, we take every step necessary to ensure your pup is in the best hands.
                      We treat all our freinds as if they were our own and provide individualized attention and tender loving care.
@@ -53,7 +60,7 @@
             <a href="#"><img class="card-img-top" src="./resources/dog2.jpg" alt=""></a>
             <div class="card-body">
                 <h4 class="card-title">
-                    <a href="#">Make an Appointment Here</a>
+                    <a href="appointment.html">Make an Appointment Here</a>
                 </h4>
                 <p class="card-text">I have been grooming and caring for animals for 20 plus years. 
                     I am a loving, caring, professional groomer that offers
@@ -74,7 +81,7 @@
             <a href="#"><img class="card-img-top" src="./resources/dog3.jpg" alt=""></a>
             <div class="card-body">
                 <h4 class="card-title">
-                    <a href="#">Make an Appointment Here</a>
+                    <a href="appointment.html">Make an Appointment Here</a>
                 </h4>
                 <p class="card-text">
                     A Pet Wellness store dedicates all its resources 
@@ -93,7 +100,7 @@
             <a href="#"><img class="card-img-top" src="./resources/dog4.jpg" alt=""></a>
             <div class="card-body">
                 <h4 class="card-title">
-                    <a href="#">Make an Appointment Here</a>
+                    <a href="appointment.html">Make an Appointment Here</a>
                 </h4>
                 <p class="card-text">
                     The Posh Paw Resort helps pet parents looking for a loving home away from home for overnight stays, a professional and
@@ -108,115 +115,6 @@
     </div>
 </div>
 
-
-<!--  ENSIONG OF THE GROOMERS OPTIONS -->
-
-
-<!-- <div class="row">
-
-    <div class="col-lg-4 col-md-6 mb-4">
-        <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-                <h4 class="card-title">
-                    <a href="#">Item One</a>
-                </h4>
-                <h5>$24.99</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!
-                </p>
-            </div>
-            <div class="card-footer">
-                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-lg-4 col-md-6 mb-4">
-        <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-                <h4 class="card-title">
-                    <a href="#">Item Two</a>
-                </h4>
-                <h5>$24.99</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!
-                    Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div class="card-footer">
-                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-lg-4 col-md-6 mb-4">
-        <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-                <h4 class="card-title">
-                    <a href="#">Item Three</a>
-                </h4>
-                <h5>$24.99</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!
-                </p>
-            </div>
-            <div class="card-footer">
-                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-lg-4 col-md-6 mb-4">
-        <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-                <h4 class="card-title">
-                    <a href="#">Item Four</a>
-                </h4>
-                <h5>$24.99</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!
-                </p>
-            </div>
-            <div class="card-footer">
-                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-lg-4 col-md-6 mb-4">
-        <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-                <h4 class="card-title">
-                    <a href="#">Item Five</a>
-                </h4>
-                <h5>$24.99</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!
-                    Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div class="card-footer">
-                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-lg-4 col-md-6 mb-4">
-        <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-                <h4 class="card-title">
-                    <a href="#">Item Six</a>
-                </h4>
-                <h5>$24.99</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!
-                </p>
-            </div>
-            <div class="card-footer">
-                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-            </div>
-        </div>
-    </div>
-
-</div> -->
 
 
 </div>
@@ -243,4 +141,29 @@
             <a href="linktotwitter"><i class="fab fa-twitter"></i></a>
         </span>
     </footer>
+
+<script>
+    /* JAVA SCRIPT THAT ACTIVATES THE DROP DOWN MENU */
+
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function (event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
+
 </body>
