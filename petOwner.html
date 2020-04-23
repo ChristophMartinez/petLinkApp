@@ -15,12 +15,21 @@
     <header>
         <div class="header-nav">
             <span class="loginLink"><a href= "petOwner.html"><h1>PetLink</h1></a></span>
-            <a href="trending.html">Trending</a>
-            <a href="messaging.html">Messaging</a>
-            <a href="services.html">Services</a>
+            <a href="trending.html"> <button class="dropbtn">Trending</button></a>
+            <a href="messaging.html"> <button class="dropbtn">Messaging</button></a>
+
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Services</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Vetenarians</a>
+                    <a href="groomersOPT.html">Groomers</a>
+                    <a href="#">Walkers/Sitters</a>
+                </div>
+            </div>
         </div>
         <!-- Search bar? -->
     </header>
+
 
     <div class="promotion-preview">
         <!-- a promo image would do? -->
@@ -177,5 +186,32 @@
             <a href="linktotwitter"><i class="fab fa-twitter"></i></a>
         </span>
     </footer>
+
+
+<script>
+    /* JAVA SCRIPT THAT ACTIVATES THE DROP DOWN MENU */
+
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function (event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
+
+
 </body>
 </html>
