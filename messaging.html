@@ -6,16 +6,17 @@
     <!--  All snippets are MIT license https://bootdey.com/license -->
     <title>Messaging</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Messaging</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
-    <link rel="stylesheet" href="profile.css">
-    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
-    
+</head> 
+   
     <style type="text/css">
         
     	body {
@@ -29,6 +30,7 @@
 #messages-main {
     position: relative;
     margin: 0 auto;
+    padding: auto;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 #messages-main:after, #messages-main:before {
@@ -172,12 +174,22 @@
 }
 .list-group.lg-alt .list-group-item {
     border: 0;
+    line-height: normal;
+    position: relative;
+    list-style-position: inside;
+    padding-bottom: 0%;
+    padding-top: 0%;
+    padding-block-end: 0%;
+
 }
 .p-15 {
     padding: 15px!important;
 }
 .btn:not(.btn-alt) {
     border: 0;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding: 0%;
 }
 .action-header {
     position: relative;
@@ -237,21 +249,51 @@
 }        
 
     </style>
-</head>
+
     
 <body class="content-grid">
     <header>
         <div class="header-nav">
             <span class="loginLink"><a href= "petOwner.html"><h1>PetLink</h1></a></span>
-            <a href="trending.html">Trending</a>
-            <a href="messaging.html">Messaging</a>
-            <a href="services.html">Services</a>
+            <a href="trending.html"> <button class="dropbtn">Trending</button></a>
+            <a href="messaging.html"> <button class="dropbtn">Messaging</button></a>
+
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Services</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Vetenarians</a>
+                    <a href="groomersOPT.html">Groomers</a>
+                    <a href="#">Walkers/Sitters</a>
+                </div>
+            </div>
         </div>
+        <script>
+            /* JAVA SCRIPT THAT ACTIVATES THE DROP DOWN MENU */
+        
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+        
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function (event) {
+                if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+        </script>
     </header>
 </body>
     
 <body>
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 <div class="container bootstrap snippet">
     <div class="tile tile-alt" id="messages-main">
         <div class="ms-menu">
@@ -259,7 +301,8 @@
                 <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="img-avatar pull-left">
                 <div>Signed in as <br> petowner@gmail.com</div>
             </div>
-            
+            <br>
+            <!--
             <div class="p-15">
                 <div class="dropdown">
                     <a class="btn btn-primary btn-block" href="" data-toggle="dropdown">Messages <i class="caret m-l-5"></i></a>
@@ -267,11 +310,11 @@
                     <ul class="dropdown-menu dm-icon w-100">
                         <li><a href=""><i class="fa fa-envelope"></i> Messages</a></li>
                         <li><a href=""><i class="fa fa-users"></i> Contacts</a></li>
-                        <!--<li><a href=""><i class="fa fa-format-list-bulleted"> </i>Todo Lists</a></li>-->
+                        <li><a href=""><i class="fa fa-format-list-bulleted"> </i>Todo Lists</a></li>
                     </ul>
                 </div>
             </div>
-            
+            -->
             <div class="list-group lg-alt">
                 <a class="list-group-item media" href="">
                     <div class="pull-left">

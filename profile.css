@@ -2,6 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300); 
 
 .header-nav{
+    position: relative;
     padding: 1rem 0 1rem 3rem;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
@@ -213,6 +214,7 @@
 }
 
 footer {
+    position: relative;
     padding: 1rem 0 1rem 3rem;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
