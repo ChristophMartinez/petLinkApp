@@ -134,6 +134,7 @@
     background: #ff9307;
     color: #000;
 } 
+
 .landing a{
     
     text-decoration: none;
@@ -141,6 +142,7 @@
     line-height: 20px;
     color: #fff;
 }
+
 .landing a:hover
 {
   color: #ff9307;  
@@ -225,11 +227,14 @@ footer {
 /*  Profile Page CSS code Starts Here  */
 
 body {
+position: relative;
 background: #e9e9e9;
 overflow-x: hidden;
+overflow-y: hidden;
 padding-top: 90px;
 font-family: "poppins", "san-serif";
 margin: 0 100px;
+display: contents;
 
 }
 
@@ -483,6 +488,53 @@ button.chatbtn i, button.createbtn i{
     width: 100%;
   }
 } */
+
+/*
+code for trending styles
+*/
+div.verticle {
+    width: 100px;
+}
+
+body {
+    font-family: sans-serif;
+  }
+
+  .buttons {
+    margin: 5px 0;
+  }
+
+  button {
+    font-size: 14px;
+    display: inline;
+    padding: 3px 6px;
+    border: 2px solid #ccc;
+    background: #fff;
+    border-radius: 5px;
+    outline: none;
+  }
+
+  button:hover {
+    border: 2px solid #888;
+    background: #ffe;
+    cursor: pointer;
+  }
+
+#carouselWrapper {
+    position: relative;
+    overflow: hidden;
+  }
+
+#carousel {
+    position: absolute;
+    visibility: hidden;
+  }
+
+/*
+end code for trending test
+*/
+
+
 
 /* DROP DOWN MENU FOR THE SERVICES */
 
