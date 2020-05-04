@@ -133,32 +133,50 @@
     color: #000;
 } 
 
+<<<<<<< HEAD
+=======
+.role button
+{
+    background-color: rgb(165, 165, 167);
+    padding: 3%;
+    margin: 3%;
+    border-radius: 3rem;
+}
+
+>>>>>>> ffb58faee04fd42649d30925c5845f0c730f9501
 .landing a{
     
     border: none;
     outline: none;
     height: 40px;
+<<<<<<< HEAD
     width: 80px;
     background: #2528fb;
     color: #fff;
     font-size: 30px;
     border-radius: 80px;
+=======
+    color: #fff;
+    font-size: 20px;
+    border-radius: 40px;
+>>>>>>> ffb58faee04fd42649d30925c5845f0c730f9501
 
     text-decoration: none;
     /* font-size: 16px; */
-    line-height: 20px;
+    line-height: 40px;
     /* color: #fff; */
 }
 
 .landing a:hover
 {
-  color: #ff9307;  
+  color: #ff9307; 
 }
 /* Login Styles End Here */
 
 
 /*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 
+<<<<<<< HEAD
 /*Check Boxes Will Start Here */
 .checkbox {
     display: inline-flex;
@@ -208,6 +226,8 @@
 
 /* Check Boxes End Here*/
 
+=======
+>>>>>>> ffb58faee04fd42649d30925c5845f0c730f9501
 .contactus a {
     color: white;
     text-decoration: none;
